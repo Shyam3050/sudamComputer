@@ -85,6 +85,10 @@ ul {
 section {
   margin: 2rem 1rem;
 }
+.img {
+  width: 100%;
+  height: 100%;
+}
 .btn {
   cursor: pointer;
   padding: 0.75rem 1.5rem;
@@ -234,4 +238,27 @@ section {
 .article h3 span {
   color: var(--pink);
   font-size: 1.5rem;
+}
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+.service {
+  border: 1px solid var(--grey-2);
+  text-align: center;
+  padding: 1rem 0;
+}
+.service .service-icon {
+  display: inline-block;
+
+  width: 70px;
+  height: 70px;
+}
+.service .service-icon i {
+  font-size: 4rem;
+  color: var(--pink);
+}
+.service h5 {
+  color: var(--yellow);
 }
