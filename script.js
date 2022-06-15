@@ -15,6 +15,7 @@ const getAllElement = (selector) => {
 const toggle_btn = getElement(".toggle-btn");
 const nav_links = getElement(".nav-links");
 const icon = getElement(".icon");
+const loader_wrapper = getElement(".loader-wrapper");
 let toogleClick = 0;
 toggle_btn.addEventListener("click", () => {
   nav_links.classList.toggle("show-link");
@@ -27,3 +28,12 @@ toggle_btn.addEventListener("click", () => {
     return (toogleClick = 0);
   }
 });
+
+// after load window
+
+window.addEventListener("load", () => {
+  setTimeout(removeLoader, 2000);
+});
+function removeLoader() {
+  loader_wrapper.remove();
+}
