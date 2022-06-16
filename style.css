@@ -250,10 +250,14 @@ section {
   padding: 1rem 0;
 }
 .service .service-icon {
-  display: inline-block;
-
-  width: 70px;
-  height: 70px;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border: 2px solid var(--white);
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 .service .service-icon i {
   font-size: 4rem;
@@ -261,4 +265,44 @@ section {
 }
 .service h5 {
   color: var(--yellow);
+}
+/* portfolio */
+.call-us {
+  text-align: center;
+}
+.call-icon {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-color: var(--white);
+  border-radius: 35px;
+}
+.call-icon i {
+  font-size: 4rem;
+  color: var(--pink);
+}
+.port-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.portfolio {
+  text-align: center;
+  border: 1px solid var(--grey-4);
+}
+.portfolio h3 {
+  color: var(--sky);
+}
+.portfolio h3 span {
+  color: var(--grey-4);
+}
+.portfolio h5 {
+  color: var(--yellow);
+}
+/* footer */
+footer {
+  background-color: var(--grey-2);
+  color: var(--grey-4);
+  text-align: center;
+  padding: 0.25rem;
 }
