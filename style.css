@@ -269,6 +269,8 @@ section {
 /* portfolio */
 .call-us {
   text-align: center;
+  border: 1px solid var(--grey-2);
+  padding: 1rem 0.25rem;
 }
 .call-icon {
   display: inline-block;
