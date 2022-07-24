@@ -23,13 +23,13 @@ html {
   --pink: #f72585;
   --red: #dd1c1a;
   --sky: #2ec4b6;
-  --white: #fff;
+  --white: rgb(255, 255, 255);
   /* fonts */
   --headingFont: "Roboto", sans-serif;
   --bodyFont: "poppins", sans-serif;
   --smallText: 0.7em;
   --letterSpacing: 3px;
-  --backgroundColor: rgb(32, 31, 31);
+  --backgroundColor: rgb(255, 255, 255);
   --transition: 0.3s ease-in-out all;
   --max-width: 1200px;
   --fixed-width: 600px;
@@ -39,7 +39,7 @@ body {
   font-family: var(--bodyFont);
   font-weight: 300;
   line-height: 1.75;
-  color: var(--white);
+  color: black;
 }
 
 h1,
@@ -146,15 +146,35 @@ section {
   width: 90vw;
   max-width: var(--max-width);
   margin: 0 auto;
+  /* outline: 1px solid green; */
 }
 .nav-header {
   height: 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* outline: 1px solid red; */
+}
+.nav-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  /* outline: 1px solid black; */
+ margin-left: 2rem;
 }
 .sudam-pc {
   margin-left: -1rem;
+  width: 5rem;
+  height: 5rem;
+  /* outline: 1px solid blueviolet; */
+}
+.nav-title{
+  font-size: 1.25rem;
+  line-height: 30px;
+  font-family: var(--headingFont);
+  font-weight:  500;
+  letter-spacing: 5px;
 }
 .toggle-btn {
   cursor: pointer;
