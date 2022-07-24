@@ -44,7 +44,7 @@ nav_link.forEach((check) => {
 // after load window
 
 window.addEventListener("load", () => {
-  setTimeout(removeLoader, 1000);
+  removeLoader();
 });
 function removeLoader() {
   loader_wrapper.remove();
