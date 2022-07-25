@@ -149,32 +149,53 @@ section {
   /* outline: 1px solid green; */
 }
 .nav-header {
+  position: sticky;
+  top: 0;
+  left: 0;
   height: 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   /* outline: 1px solid red; */
 }
-.nav-right{
+.nav-right {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 60px;
   /* outline: 1px solid black; */
- margin-left: 2rem;
+  margin-left: 2rem;
 }
 .sudam-pc {
-  margin-left: -1rem;
+  
   width: 5rem;
   height: 5rem;
   /* outline: 1px solid blueviolet; */
 }
-.nav-title{
+.nav-title {
   font-size: 1.25rem;
   line-height: 30px;
   font-family: var(--headingFont);
-  font-weight:  500;
+  font-weight: 500;
   letter-spacing: 5px;
+}
+.down-navbar {
+ 
+  width: 99vw;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 3rem;
+
+  /* overflow-y: auto; */
+}
+.navi-btn {
+  background-color: #666666;
+  padding: 0.25rem 1.2rem;
+  border-radius: 1.5rem;
+  color: white;
 }
 .toggle-btn {
   cursor: pointer;
@@ -196,10 +217,10 @@ section {
   border-top: 1px solid var(--grey-2);
   padding: 1rem 0;
   transition: 0.5s;
-  color: var(--grey-3);
+  color: var(--grey-1);
 }
 .link:hover {
-  color: var(--grey-4);
+  color: var(--grey-3);
 }
 /* page-start */
 .page {
