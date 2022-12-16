@@ -26,7 +26,7 @@ function barCloser() {
 const toggle_btn = getElement(".toggle-btn");
 const nav_links = getElement(".nav-links");
 const icon = getElement(".icon");
-const loader_wrapper = getElement(".loader-wrapper");
+// const loader_wrapper = getElement(".loader-wrapper");
 let toogleClick = 0;
 toggle_btn.addEventListener("click", () => {
   nav_links.classList.toggle("show-link");
@@ -43,9 +43,9 @@ nav_link.forEach((check) => {
 });
 // after load window
 
-window.addEventListener("load", () => {
-  removeLoader();
-});
-function removeLoader() {
-  loader_wrapper.remove();
-}
+// window.addEventListener("load", () => {
+//   removeLoader();
+// });
+// function removeLoader() {
+//   loader_wrapper.remove();
+// }
